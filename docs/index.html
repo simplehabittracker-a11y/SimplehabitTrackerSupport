@@ -3,187 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Habit Tracker - User Manual</title>
-    <meta name="description" content="Complete user manual for Simple Habit Tracker app in multiple languages">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+    <title>Simple Habit Tracker - User Manuals</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            color: #333;
+        }
+        
+        /* Force white background always */
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        .manual-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .manual-card {
+            padding: 2rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            background-color: #fafafa;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .manual-card:hover {
+            border-color: #3498db;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.1);
+        }
+        
+        .language-flag {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .language-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .language-native {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        /* Keep all text dark on white */
+        
+        .description {
+            margin-top: 2rem;
+            text-align: center;
+            color: #666;
+        }
+        
+        /* Description stays gray on white */
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>🌱 Simple Habit Tracker</h1>
-            <p class="subtitle">User Manual - Build healthy habits, one day at a time</p>
-        </div>
-    </header>
-
-    <section class="language-selector">
-        <div class="container">
-            <h2>🌍 Choose Your Language</h2>
-            <div class="language-links">
-                <a href="en/user-manual.html" class="language-link">
-                    🇺🇸 <span>English</span>
-                </a>
-                <a href="de/user-manual.html" class="language-link">
-                    🇩🇪 <span>Deutsch</span>
-                </a>
-                <a href="tr/user-manual.html" class="language-link">
-                    🇹🇷 <span>Türkçe</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <main class="main-content">
-        <div class="container">
-            <div class="content-wrapper">
-                <aside class="toc">
-                    <h3>📚 Quick Navigation</h3>
-                    <ul>
-                        <li><a href="#download">📱 Download App</a></li>
-                        <li><a href="#features">✨ Key Features</a></li>
-                        <li><a href="#support">💬 Support</a></li>
-                        <li><a href="#privacy">🔒 Privacy</a></li>
-                    </ul>
-                </aside>
-
-                <article class="article">
-                    <h1>Welcome to Simple Habit Tracker</h1>
-                    
-                    <p>A powerful habit tracking app designed to help you build and maintain daily and weekly habits with comprehensive streak tracking, progress analytics, and goal setting capabilities.</p>
-
-                    <section id="download">
-                        <h2>📱 Download the App</h2>
-                        <p>Get Simple Habit Tracker from the Google Play Store:</p>
-                        <p>
-                            <a href="https://play.google.com/store/apps/details?id=com.simplehabittracker.app" 
-                               class="btn" target="_blank" rel="noopener">
-                                📱 Download on Google Play
-                            </a>
-                        </p>
-                        <p><strong>Version:</strong> 1.0.0+3 | <strong>Size:</strong> ~47MB | <strong>Requires:</strong> Android 14+</p>
-                    </section>
-
-                    <section id="features">
-                        <h2>✨ Key Features</h2>
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 1rem 0;">
-                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2196F3;">
-                                <h3>🔥 Habit Tracking</h3>
-                                <ul>
-                                    <li>Daily and weekly habits</li>
-                                    <li>Custom target goals</li>
-                                    <li>Streak counting</li>
-                                    <li>Progress analytics</li>
-                                </ul>
-                            </div>
-                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #4CAF50;">
-                                <h3>📊 Progress Insights</h3>
-                                <ul>
-                                    <li>Completion rates</li>
-                                    <li>Long-term trends</li>
-                                    <li>Multiple view modes</li>
-                                    <li>Personal records</li>
-                                </ul>
-                            </div>
-                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #FF9800;">
-                                <h3>🔒 Privacy & Security</h3>
-                                <ul>
-                                    <li>Google & Apple Sign-In</li>
-                                    <li>Encrypted cloud storage</li>
-                                    <li>Data export options</li>
-                                    <li>Complete account deletion</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h2>🚀 Getting Started</h2>
-                        <ol>
-                            <li><strong>Download</strong> the app from Google Play Store</li>
-                            <li><strong>Sign in</strong> with Google or Apple account</li>
-                            <li><strong>Create</strong> your first habit using the + button</li>
-                            <li><strong>Track</strong> daily progress by marking habits complete</li>
-                            <li><strong>Celebrate</strong> your growing streaks and achievements!</li>
-                        </ol>
-                    </section>
-
-                    <section>
-                        <h2>🌍 Multi-Language Support</h2>
-                        <p>Simple Habit Tracker supports multiple languages with complete translations:</p>
-                        <ul>
-                            <li><strong>🇺🇸 English</strong> - Full support with comprehensive documentation</li>
-                            <li><strong>🇩🇪 German (Deutsch)</strong> - Vollständige Unterstützung mit umfassender Dokumentation</li>
-                            <li><strong>🇹🇷 Turkish (Türkçe)</strong> - Kapsamlı dokümantasyon ile tam destek</li>
-                        </ul>
-                        <p>The app automatically detects your device language and displays the appropriate interface.</p>
-                    </section>
-
-                    <section id="support">
-                        <h2>💬 Support & Help</h2>
-                        <p>Need help? We're here for you!</p>
-                        <ul>
-                            <li><strong>📧 Email Support:</strong> <a href="mailto:support@simplehabittracker.app">support@simplehabittracker.app</a></li>
-                            <li><strong>🐛 Bug Reports:</strong> <a href="https://github.com/your-username/simple-habit-tracker/issues" target="_blank">GitHub Issues</a></li>
-                            <li><strong>📖 Documentation:</strong> Select your language above for detailed guides</li>
-                            <li><strong>⭐ Reviews:</strong> Leave feedback on the Google Play Store</li>
-                        </ul>
-                    </section>
-
-                    <section id="privacy">
-                        <h2>🔒 Privacy & Data</h2>
-                        <p>Your privacy is our priority:</p>
-                        <ul>
-                            <li>All data is encrypted and stored securely</li>
-                            <li>We never share your personal information</li>
-                            <li>You can export your data at any time</li>
-                            <li>Complete account deletion removes all data</li>
-                        </ul>
-                        <p>
-                            <a href="../privacy_policy.html" class="btn-outline" target="_blank">
-                                📄 Read Privacy Policy
-                            </a>
-                        </p>
-                    </section>
-                </article>
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p><strong>Simple Habit Tracker</strong> - Build healthy habits, one day at a time! 🌱</p>
-            <p>Made with ❤️ using Flutter | 
-               <a href="../privacy_policy.html">Privacy Policy</a> | 
-               <a href="mailto:support@simplehabittracker.app">Support</a>
-            </p>
-            <p><small>Last updated: August 2025</small></p>
-        </div>
-    </footer>
-
-    <script>
-        // Simple analytics and user interaction
-        document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-
-            // Add click tracking for external links
-            document.querySelectorAll('a[href^="http"]').forEach(link => {
-                link.addEventListener('click', function() {
-                    console.log('External link clicked:', this.href);
-                });
-            });
-        });
-    </script>
+    <h1>Simple Habit Tracker<br>User Manuals</h1>
+    
+    <div class="manual-grid">
+        <a href="en/user-manual.html" class="manual-card">
+            <span class="language-flag">🇺🇸</span>
+            <div class="language-name">English</div>
+            <div class="language-native">User Manual</div>
+        </a>
+        
+        <a href="de/user-manual.html" class="manual-card">
+            <span class="language-flag">🇩🇪</span>
+            <div class="language-name">German</div>
+            <div class="language-native">Benutzerhandbuch</div>
+        </a>
+        
+        <a href="tr/user-manual.html" class="manual-card">
+            <span class="language-flag">🇹🇷</span>
+            <div class="language-name">Turkish</div>
+            <div class="language-native">Kullanım Kılavuzu</div>
+        </a>
+    </div>
+    
+    <div class="description">
+        <p>Select your preferred language to view the complete user manual with comprehensive localization features, password management, and account management instructions.</p>
+    </div>
 </body>
 </html>
